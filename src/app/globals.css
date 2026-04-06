@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", system-ui, sans-serif;
+
+  /* Fífill palette — "Quiet breath" */
+  --color-page: #faf9f6;
+  --color-surface: #ffffff;
+  --color-muted: #f3f0eb;
+  --color-deep: #2c2620;
+
+  --color-text: #2c2620;
+  --color-text-body: #5c5650;
+  --color-text-muted: #9a938b;
+  --color-text-inverse: #faf9f6;
+
+  --color-border: #e8e3dc;
+
+  --color-accent: #c2703e;
+  --color-accent-hover: #a85c30;
+  --color-accent-light: #faf0e8;
+
+  /* Keep amber for backward compat during transition */
+  --color-amber-500: #c2703e;
+  --color-amber-600: #a85c30;
+  --color-amber-50: #faf0e8;
+  --color-amber-400: #d4884e;
+
+  --color-earth-50: #faf9f6;
+  --color-earth-100: #f3f0eb;
+  --color-earth-200: #e8e3dc;
+  --color-earth-300: #d5cec4;
+  --color-earth-400: #b8afa3;
+  --color-earth-500: #9a938b;
+  --color-earth-600: #7a736b;
+  --color-earth-700: #5c5650;
+  --color-earth-800: #3e3a36;
+  --color-earth-900: #2c2620;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-page);
+}
+
+/* Focus-visible ring */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
