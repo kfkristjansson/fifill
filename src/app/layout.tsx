@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Fífill — Daglegar æfingar fyrir núvitund",
   description:
     "Núvitundaræfingar, námskeið og bóksala. Átta vikna forrit með leiðbeiningum og hljóðupptökum.",
+  icons: {
+    icon: "/favicon.png",
+  },
   openGraph: {
     title: "Fífill — Daglegar æfingar fyrir núvitund",
     description: "Núvitundaræfingar, námskeið og bóksala.",
